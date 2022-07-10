@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="blog_dev@localhost">
+  <database-model serializer="dbm" dbms="MONGO" family-id="MONGO" format-version="4.19">
+    <root id="1">
+      <ServerVersion>4.2.0</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="admin"/>
+    <schema id="3" parent="1" name="blog_dev">
+      <Current>1</Current>
+    </schema>
+    <schema id="4" parent="1" name="config"/>
+    <schema id="5" parent="1" name="craigslist"/>
+    <schema id="6" parent="1" name="local"/>
+    <schema id="7" parent="1" name="nestjs-course"/>
+    <schema id="8" parent="1" name="printshop"/>
+    <schema id="9" parent="1" name="reddit"/>
+    <table id="10" parent="3" name="blogs"/>
+    <table id="11" parent="3" name="users"/>
+    <column id="12" parent="10" name="_id">
+      <DataType>ObjectId(0)|12s</DataType>
+    </column>
+    <column id="13" parent="10" name="__v">
+      <DataType>Integer|4s</DataType>
+    </column>
+    <column id="14" parent="10" name="title">
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="15" parent="10" name="_user">
+      <Position>1</Position>
+      <DataType>ObjectId(0)|12s</DataType>
+    </column>
+    <column id="16" parent="10" name="content">
+      <Position>2</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="17" parent="10" name="createdAt">
+      <Position>3</Position>
+      <DataType>Date(0)|91s</DataType>
+    </column>
+    <column id="18" parent="11" name="_id">
+      <DataType>ObjectId(0)|12s</DataType>
+    </column>
+    <column id="19" parent="11" name="displayName">
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="20" parent="11" name="__v">
+      <Position>1</Position>
+      <DataType>Integer|4s</DataType>
+    </column>
+    <column id="21" parent="11" name="googleId">
+      <Position>1</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+  </database-model>
+</dataSource>
